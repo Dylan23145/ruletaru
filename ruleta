@@ -1,0 +1,19 @@
+CARGADOR=$(shuf -i 1-6 -n 1)                      BALA=$(shuf -i 1-6 -n 1)
+
+if [ $CARGADOR -eq $BALA ]
+
+then
+
+    play sonido/bala.mp3
+
+echo "perdiste"
+
+fi
+
+if [ $CARGADOR -ne $BALA ]
+
+then
+
+        play sonido/cargador
+
+fi
