@@ -3,17 +3,20 @@ CARGADOR=$(shuf -i 1-6 -n 1)                      BALA=$(shuf -i 1-6 -n 1)
 if [ $CARGADOR -eq $BALA ]
 
 then
-    cd sonido
-    play bala.mp3
+    
+    play -q bala.mp3
 
-echo "perdiste"
+echo "PERDISTE"
+
+
 
 fi
 
 if [ $CARGADOR -ne $BALA ]
 
 then
-        cd sonido
-        play cargador.mp3
+        
+        play -q cargador.mp3
 
 fi
+echo " por poco otra?"
