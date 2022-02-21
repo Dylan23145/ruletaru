@@ -14,6 +14,8 @@ if [ $CARGADOR -eq $BALA ]
 
 then
 clear
+    cd 
+    cd ruletaru/sonidos
     play -q bala.mp3
     echo " puntuaje: $score"
     
@@ -26,9 +28,9 @@ fi
 if [ $CARGADOR -ne $BALA ]
 
 then
-
+  
      score=$(( $score + 1))
-
+      cd ruletaru/sonidos
       play -q cargador.mp3
 
 fi
