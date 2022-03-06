@@ -33,9 +33,6 @@ then
       play -q cargador.mp3
 
 fi
-
-echo " puntuaje: $score"
-
 echo "Te atreves a otra? (si/no)"
 
 read si
